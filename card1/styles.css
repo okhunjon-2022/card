@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background: whitesmoke;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container{
+    
+}
+
+.prodile-card{
+    background: #444;
+    width: 60rem;
+    margin: 2rem;
+    border-radius: 5px;
+    display: flex;
+    cursor: pointer;
+    
+    transition: .5s;
+}
+
+.img-sec img{
+    height: 25rem;
+    width: 350px;
+}
+.info{
+    position: relative;
+    z-index: 2;
+    padding: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.info h3{
+    font-size: 3rem;
+}
+
+.info p{
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+.info span{
+    display: block;
+    position: absolute;
+    background: #444;
+    height: 3rem;
+    width: 3rem;
+    transform: rotate(45deg);
+    left: 1.5rem;
+    top: 1rem;
+    z-index: -1;
+    transition: .5s;
+}
+
+.prodile-card:hover{
+    box-shadow: 0 5px 5rem 1rem grey;
+}
+
+.prodile-card:hover span{
+    left: -1.5rem;
+}
